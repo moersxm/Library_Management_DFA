@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management DFA Animation</title>
+    <!-- 引用样式文件 -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引用动画库和自定义JS文件 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2 style="text-align: center;">图书管理系统DFA状态动画展示</h2>
+    <!-- 使用 object 引用 SVG 文件 -->
+    <div id="dfa-container">
+        <object id="dfa-svg" type="image/svg+xml" data="./Library_Management_DFA_Chinese.svg" width="760" height="449"></object>
+    </div>
+    <div id="control-panel">
+        <input type="text" id="path-input" placeholder="输入路径转移符号，如：b-i" style="width: 300px;"/>
+        <button onclick="navigatePath()">开始导航</button>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <div class="display-box" id="path-display">路径: 无</div>
+        <div class="display-box" id="current-node">当前节点: 无</div>
+        <div class="display-box" id="target-node">目标节点: 无</div>
+    </div>
+</body>
+</html>

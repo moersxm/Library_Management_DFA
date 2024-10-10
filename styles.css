@@ -1,0 +1,55 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#dfa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight {
+    stroke: red;
+    stroke-width: 4px; /* 线条加粗 */
+}
+
+.node-text {
+    fill: black;
+    font-size: 14px;
+}
+
+.active {
+    fill: blue; /* 选中节点时文字变为蓝色 */
+    font-weight: bold;
+}
+
+.circle-node {
+    transition: r 0.2s;
+}
+
+#control-panel {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.display-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    min-width: 100px;
+}
+
+#path-display {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 60%;
+    text-align: center;
+    word-wrap: break-word;
+}
